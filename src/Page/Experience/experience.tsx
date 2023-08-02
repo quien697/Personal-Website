@@ -2,12 +2,12 @@ import React from "react";
 import Section from "@/components/SectionLayout";
 import Heading from "@/components/SectionHeading";
 
-export default function PortfolioSection() {
+export default function ExperienceSection() {
   return (
-    <Section id="portfolio" backgroundColor="bg-black-3">
-      <Heading name="Portfolio" />
+    <Section id="experience" backgroundColor="bg-black-4">
+      <Heading name="Experience" />
       <div>
-        Portfolio
+        111
       </div>
     </Section>
   )
