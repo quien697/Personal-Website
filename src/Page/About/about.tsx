@@ -47,10 +47,10 @@ export default function AboutSection() {
           <div className="text-xl lg:text-2xl">
             {paragraphs.map((item, idx) => {
               return (
-                <>
-                  <p key={idx}>{item.paragraph}</p>
+                <div key={idx}>
+                  <p>{item.paragraph}</p>
                   <br />
-                </>
+                </div>
               )
             })}
           </div>
@@ -59,7 +59,7 @@ export default function AboutSection() {
           <h1 className="text-3xl font-bold mb-6">My Skills</h1>
           <div className="flex flex-row flex-wrap justify-center z-10 lg:justify-start">
             {skills.map((item, idx) => {
-              return <p key={`${idx}-${item.skill}`} className="font-semibold bg-blue text-while px-4 py-2 mr-2 mt-2 rounded shadow">{item.skill}</p>
+              return <p key={idx} className="font-semibold bg-blue text-while px-4 py-2 mr-2 mt-2 rounded shadow">{item.skill}</p>
             })}
           </div>
         </div>
