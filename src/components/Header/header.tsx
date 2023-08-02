@@ -10,8 +10,8 @@ const iconSize = 24;
 const navigations = [
   { name: "Home", href: "#", current: true },
   { name: "About", href: "#", current: false },
-  { name: "Portfolio", href: "#", current: false },
   { name: "Experience", href: "#", current: false },
+  { name: "Portfolio", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
 ]
 
