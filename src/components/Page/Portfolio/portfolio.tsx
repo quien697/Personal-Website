@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "@/components/SectionLayout";
-import Heading from "@/components/SectionHeading";
+import Section from "@/components//Common/SectionLayout";
+import Heading from "@/components/Common/SectionHeading";
 
 export default function PortfolioSection() {
   return (

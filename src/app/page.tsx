@@ -1,11 +1,11 @@
 "use client"
 
 import Header from "@/components/Header"
-import HomeSection from "@/Page/Home"
-import AboutSection from "@/Page/About"
-import ExperienceSection from "@/Page/Experience"
-import PortfolioSection from "@/Page/portfolio"
-import ContactSection from "@/Page/contact"
+import HomeSection from "@/components/Page/Home"
+import AboutSection from "@/components/Page/About"
+import ExperienceSection from "@/components/Page/Experience"
+import PortfolioSection from "@/components/Page/Portfolio/portfolio"
+import ContactSection from "@/components/Page/Contact"
 
 export default function Home() {
   return (

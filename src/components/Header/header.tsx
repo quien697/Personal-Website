@@ -1,36 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { RiSunLine, RiMoonFill } from "react-icons/ri";
 import { GrLanguage } from "react-icons/gr"
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { RiSunLine, RiMoonFill } from "react-icons/ri";
+import { navigations, socials, themes, languages } from "@/data/pageData"
 
 const iconSize = 24;
-
-const navigations = [
-  { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
-  { name: "Experience", href: "#", current: false },
-  { name: "Portfolio", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
-]
-
-const socials = [
-  { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} /> },
-  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} color="white" /> },
-  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} /> },
-]
-
-const themes = [
-  { name: "System", icon: <FaInstagram size={iconSize} /> },
-  { name: "Light", icon: <RiSunLine size={iconSize} /> },
-  { name: "Dark", icon: <RiMoonFill size={iconSize} /> }, 
-]
-
-const languages = [
-  { name: "English", icon: <FaInstagram size={iconSize} /> },
-  { name: "繁體中文", icon: <FaGithub size={iconSize} /> },
-]
+const menuIconSize = 30;
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false)
@@ -60,7 +36,7 @@ const Header = () => {
             {/* Setting Button */}
             <ul className="flex border-t-2 border-black-4 py-2 lg:hidden">
               <li key="dark" className="flex border-2 border-black-4 mx-2 my-2 p-2 rounded-md">
-                <RiMoonFill size={24} color="white" />
+                <RiMoonFill size={iconSize} color="white" />
                 <select className="bg-black-1 text-white text-center outline-0 outline-none appearance-none pl-1">
                 {themes.map((item) => {
                   return (
@@ -70,7 +46,7 @@ const Header = () => {
                 </select>
               </li>
               <li key="light" className="flex border-2 border-black-4 mx-2 my-2 p-2 rounded-md">
-                <RiSunLine size={24} color="white" />
+                <RiSunLine size={iconSize} color="white" />
                 <select className="bg-black-1 text-white text-center outline-0 outline-none appearance-none pl-1">
                   {languages.map((item) => {
                     return (
@@ -94,7 +70,7 @@ const Header = () => {
           {/* Setting Button */}
           <ul className="flex list-none lg:flex border-t-2 border-black-4 hidden">
             <li key="setting-theme" className="flex border-2 border-black-4 mx-2 my-4 p-2 rounded-md">
-              <RiMoonFill size={24} color="white" />
+              <RiMoonFill size={iconSize} color="white" />
               <select className="bg-black-1 text-white text-center outline-0 outline-none appearance-none pl-1">
                 {themes.map((item) => {
                   return (
@@ -104,7 +80,7 @@ const Header = () => {
               </select>
             </li>
             <li key="setting-language" className="flex border-2 border-black-4 mx-2 my-4 p-2 rounded-md">
-              <RiSunLine size={24} color="white" />
+              <RiSunLine size={iconSize} color="white" />
               <select className="bg-black-1 text-white text-center outline-0 outline-none appearance-none pl-1">
                 {languages.map((item) => {
                   return (
@@ -116,7 +92,7 @@ const Header = () => {
           </ul>
           {/* Menu Button */}
           <button className="text-yelloww p-2 lg:hidden" onClick={() => setNavbar(!navbar)}>
-            {navbar ? <IoMdClose size={30} color="white" /> : <IoMdMenu size={30} color="white" />}
+            {navbar ? <IoMdClose size={menuIconSize} color="white" /> : <IoMdMenu size={menuIconSize} color="white" />}
           </button>
         </div>
       </nav>

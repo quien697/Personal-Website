@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Section from "@/components/SectionLayout"
+import Section from "@/components//Common/SectionLayout";
 import { Link } from "react-scroll";
 import { RiArrowDownSLine } from "react-icons/ri"
 

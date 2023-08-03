@@ -1,20 +1,7 @@
 import React from "react";
-import Section from "@/components/SectionLayout";
-import Heading from "@/components/SectionHeading";
-
-interface ExperienceProps {
-  position: String;
-  company: String;
-  location: String;
-  date: String;
-  detail: String;
-}
-
-const experiences: Array<ExperienceProps> = [
-  { position: "Full Stack Developer", company: "Freelance", location: "Taipei, Taiwan", date: "2018-2022", detail: "As a freelance with our team, I mainly maintain admin website to optimized database search functions, optimized website more user-friendly and develope android mobile app." },
-  { position: "Junior Web Developer", company: "Daher Infomation Co., Ltd", location: "Taoyuan, Taiwan", date: "2013-2014", detail: "Daher is a commercial software development company, like enterprise erp systems,  POS system, financial accounting system, etc.\n I mainly help the company to optimize website more user-friendly and evelope a better performance database that increased query speed." },
-  { position: "Mobile Application Developer", company: "Sunlight Infomation Co., Ltd", location: "Taipei, Taiwan", date: "2011-2012", detail: "Sunlight is a sofeware company. I mainly help company to maintain the exiting website and develop android moblie app with a team." },
-]
+import Section from "@/components//Common/SectionLayout";
+import Heading from "@/components/Common/SectionHeading";
+import { experiences } from "@/data/pageData"
 
 export default function ExperienceSection() {
   return (
