@@ -1,6 +1,7 @@
 "use client"
 
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 import HomeSection from "@/components/Page/Home"
 import AboutSection from "@/components/Page/About"
 import ExperienceSection from "@/components/Page/Experience"
@@ -18,6 +19,7 @@ export default function Home() {
         <PortfolioSection />
         <ContactSection />
       </main>
+      <Footer />
     </div>
   )
 }

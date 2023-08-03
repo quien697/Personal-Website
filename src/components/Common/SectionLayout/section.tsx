@@ -10,7 +10,7 @@ interface SectionProps {
 const Section: React.FC<SectionProps>  = ({ id, backgroundColor, className, children }) => {
   return (
     <section id={id} className={`${backgroundColor}`}>
-      <div className={`px-8 py-16 ${className}`}>
+      <div className={`px-10 py-16 lg:px-24 ${className}`}>
         {children}
       </div>
     </section>

@@ -1,8 +1,9 @@
-import { Wellfleet } from "next/font/google";
 import { ReactElement } from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { HiEnvelope, HiMapPin } from "react-icons/hi2"
+import { AiFillPhone } from "react-icons/ai"
 
-const iconSize = 24;
+const iconSize = 26;
 
 interface nameProps {
   name: string;
@@ -34,9 +35,9 @@ export const navigations: Array<NavigationsProps> = [
 ]
 // Socials
 export const socials: Array<SocialsProps> = [
-  { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} /> },
-  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} color="white" /> },
-  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} /> },
+  { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} />, },
+  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} />, },
+  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} />, },
 ]
 // Themes
 export const themes: Array<nameProps> = [
@@ -84,19 +85,29 @@ export const experiences: Array<ExperienceProps> = [
     company: "Freelance", 
     location: "Taipei, Taiwan", 
     date: "2018-2022", 
-    detail: "As a freelance with our team, I mainly maintain admin website to optimized database search functions, optimized website more user-friendly and develope android mobile app."
+    detail: "As a freelance with our team, I mainly maintain admin website to optimized database search functions, optimized website more user-friendly and develope android mobile app.",
   },
   { 
     position: "Junior Web Developer", 
     company: "Daher Infomation Co., Ltd", 
     location: "Taoyuan, Taiwan", 
     date: "2013-2014", 
-    detail: "Daher is a commercial software development company, like enterprise erp systems,  POS system, financial accounting system, etc.\n I mainly help the company to optimize website more user-friendly and evelope a better performance database that increased query speed." 
+    detail: "Daher is a commercial software development company, like enterprise erp systems,  POS system, financial accounting system, etc.\n I mainly help the company to optimize website more user-friendly and evelope a better performance database that increased query speed.",
   },
   { 
     position: "Mobile Application Developer", 
     company: "Sunlight Infomation Co., Ltd", 
     location: "Taipei, Taiwan", date: "2011-2012", 
-    detail: "Sunlight is a sofeware company. I mainly help company to maintain the exiting website and develop android moblie app with a team." 
+    detail: "Sunlight is a sofeware company. I mainly help company to maintain the exiting website and develop android moblie app with a team.",
   },
+]
+// Contact
+interface ContactsProps {
+  name: String;
+  icon: ReactElement;
+}
+export const contacts: Array<ContactsProps> = [
+  { name: "V6P 2G8 Vancouver, Canada", icon: <HiMapPin size={iconSize} className="text-blue" />, },
+  { name: "quien697@gmail.com", icon: <HiEnvelope size={iconSize} className="text-blue" />, },
+  { name: "(337) 318-5945", icon: <AiFillPhone size={iconSize} className="text-blue" />, },
 ]

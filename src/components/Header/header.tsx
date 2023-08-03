@@ -62,7 +62,7 @@ const Header = () => {
             {socials.map((item) => {
               return (
                 <li key={item.name} className="mx-2 my-2">
-                  <a href={item.href} className="w-full text-slate-50">{item.icon}</a>
+                  <a href={item.href}>{item.icon}</a>
                 </li>
               )
             })}
