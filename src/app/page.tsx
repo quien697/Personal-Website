@@ -7,6 +7,7 @@ import AboutSection from "@/components/Page/About"
 import ExperienceSection from "@/components/Page/Experience"
 import PortfolioSection from "@/components/Page/Portfolio/portfolio"
 import ContactSection from "@/components/Page/Contact"
+import BackToTopButton from "@/components/Common/BackToTopButton"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <ExperienceSection />
         <PortfolioSection />
         <ContactSection />
+        <BackToTopButton />
       </main>
       <Footer />
     </div>
