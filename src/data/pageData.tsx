@@ -5,7 +5,7 @@ import { AiFillPhone } from "react-icons/ai"
 
 const iconSize = 26;
 
-interface nameProps {
+interface NameProps {
   name: string;
 }
 interface NavigationsProps {
@@ -18,14 +18,14 @@ interface SocialsProps {
   icon: ReactElement;
 }
 interface ExperienceProps {
-  position: String;
-  company: String;
-  location: String;
-  date: String;
-  detail: String;
+  position: string;
+  company: string;
+  location: string;
+  date: string;
+  detail: string;
 }
 
-// Navigations
+// Navigation
 export const navigations: Array<NavigationsProps> = [
   { name: "Home", href: "home" },
   { name: "About", href: "about" },
@@ -33,31 +33,31 @@ export const navigations: Array<NavigationsProps> = [
   { name: "Portfolio", href: "portfolio" },
   { name: "Contact", href: "contact" },
 ]
-// Socials
+// Social
 export const socials: Array<SocialsProps> = [
   { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} />, },
   { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} />, },
   { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} />, },
 ]
-// Themes
-export const themes: Array<nameProps> = [
+// Theme
+export const themes: Array<NameProps> = [
   { name: "System", },
   { name: "Light", },
   { name: "Dark", }, 
 ]
-// Languages
-export const languages: Array<nameProps> = [
+// Language
+export const languages: Array<NameProps> = [
   { name: "English", },
   { name: "繁體中文", },
 ]
-// Paragraphs
-export const paragraphs: Array<nameProps> = [
+// Paragraph
+export const paragraphs: Array<NameProps> = [
   { name: "Hi, My name is Tsung-Hsun, or call me Quien. I have a 1+ years of experience in Android app development using Java and 4+ years of experience in Web development, and learned iOS development with Swift for 1 year." },
   { name: "Coding is a passion for me, not just a job. Although the journey has not been easy, I am proud to have overcome every challenge that came my way. My passion for coding has never wavered, and I remain committed to pursuing new challenges to further enhance my skills and knowledge." },
   { name: "I have wide range of hobbies and passions. From reading, playing sports, running, traveling. I am always seeking new experiences and love to keep myself engaged and learning new things." },
 ]
-// Skills
-export const skills: Array<nameProps> = [
+// Skill
+export const skills: Array<NameProps> = [
   { name: "HTML" },
   { name: "CSS" },
   { name: "JavaScript" },
@@ -78,7 +78,7 @@ export const skills: Array<nameProps> = [
   { name: "GitHub" },
   { name: "AWS" },
 ]
-// Experiences
+// Experience
 export const experiences: Array<ExperienceProps> = [
   { 
     position: "Full Stack Developer", 
@@ -103,11 +103,37 @@ export const experiences: Array<ExperienceProps> = [
 ]
 // Contact
 interface ContactsProps {
-  name: String;
+  name: string;
   icon: ReactElement;
 }
 export const contacts: Array<ContactsProps> = [
   { name: "V6P 2G8 Vancouver, Canada", icon: <HiMapPin size={iconSize} className="text-blue" />, },
   { name: "quien697@gmail.com", icon: <HiEnvelope size={iconSize} className="text-blue" />, },
   { name: "(337) 318-5945", icon: <AiFillPhone size={iconSize} className="text-blue" />, },
+]
+// Portfolio
+interface PortfolioProps {
+  name: string;
+  description: string;
+  image: string;
+  technologies: Array<NameProps>;
+  github?: string;
+  link?: string;
+}
+export const portfolios: Array<PortfolioProps> = [
+  { 
+    name: "Personal Website", 
+    description: "",
+    image: "/personal-website.png",
+    technologies: [ { name: "Next.js", }, { name: "TypeScript", }, { name: "Tailwind" } ],
+    link: "https://www.google.com/",
+  },
+  { 
+    name: "chatwis.io", 
+    description: "Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.",
+    image: "/personal-website.png",
+    technologies: [ { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, ],
+    github: "https://www.google.com/",
+    link: "https://www.google.com/",
+  },
 ]
