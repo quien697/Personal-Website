@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import { GrLanguage } from "react-icons/gr"
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { RiSunLine, RiMoonFill } from "react-icons/ri";
@@ -28,7 +29,16 @@ const Header = () => {
               {navigations.map((item) => {
                 return (
                   <li key={item.name} className="py-2 w-full lg:py-3">
-                    <a href={item.href} className="w-full text-white">{item.name}</a>
+                    <Link 
+                      to={item.href} 
+                      activeClass="text-blue" 
+                      spy={true}
+                      smooth={true}
+                      duration={500} 
+                      className="cursor-pointer hover:text-blue" 
+                      onClick={() => setNavbar(!navbar)}
+                    >
+                      {item.name}</Link>
                   </li>
                 )
               })}
