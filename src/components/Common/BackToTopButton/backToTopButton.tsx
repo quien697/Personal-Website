@@ -13,7 +13,7 @@ const BackToTopButton: React.FC = () => {
   };
 
   return (
-    <button onClick={backToTop} className={`fixed bottom-4 right-4 flex justify-center items-center bg-black-1 text-white w-10 h-10 rounded-full shadow hover:bg-blue ${showBackToTopBtn ? "" : "hidden"}`}>
+    <button onClick={backToTop} className={`fixed bottom-4 right-4 flex justify-center items-center bg-neutral-300 dark:bg-neutral-950 w-10 h-10 rounded-full shadow shadow-neutral-400 dark:shadow-neutral-800 hover:bg-blue-600 hover:text-white lg:w-12 lg:h-12 ${showBackToTopBtn ? "" : "hidden"}`}>
       <FaChevronUp size={22} />
     </button>
   )

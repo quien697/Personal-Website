@@ -5,8 +5,7 @@ import Heading from "@/components/Common/SectionHeading";
 
 export default function ContactSection() {
   const form = useRef<HTMLFormElement>(null);
-  const currentForm = form.current;
-  // if (currentForm == null) return;
+  const currentForm = form.current || "";
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,16 +19,16 @@ export default function ContactSection() {
   };
 
   return (
-    <Section id="contact" backgroundColor="bg-black-4">
+    <Section id="contact" backgroundColor="bg-neutral-100 dark:bg-neutral-700">
       <Heading name="Contact" />
       <div className="flex flex-col items-center g-y-4">
         <h3 className="text-2xl text-bold mb-4 lg:text-3xl">Get In Touch</h3>
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex flex-row flex-wrap justify-center gap-4">
-            <input name="name" required placeholder="name" className="grow bg-black-1 border-black-4 border-2 rounded-md px-3 py-2"></input>
-            <input name="email" required placeholder="email" className="grow bg-black-1 border-black-4 border-2 rounded-md px-3 py-2"></input>
-            <textarea name="message" required rows={5} placeholder="message" className="w-full bg-black-1 border-black-4 border-2 rounded-md px-3 py-2"></textarea>
-            <button type="submit" className="bg-blue rounded-full py-3 px-7">Send Message</button>
+          <div className="flex flex-wrap justify-center text-white gap-4">
+            <input name="name" required placeholder="name" className="grow bg-neutral-800 outline-blue-600 rounded-md px-3 py-2"></input>
+            <input name="email" required placeholder="email" className="grow bg-neutral-800 outline-blue-600 rounded-md px-3 py-2"></input>
+            <textarea name="message" required rows={5} placeholder="message" className="w-full bg-neutral-800 outline-blue-600 rounded-md px-3 py-2"></textarea>
+            <button type="submit" className="bg-blue-600 rounded-full py-3 px-7 shadow-lg hover:bg-blue-800">Send Message</button>
           </div>
         </form>
       </div>

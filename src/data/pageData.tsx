@@ -8,6 +8,10 @@ const iconSize = 26;
 interface NameProps {
   name: string;
 }
+interface ValueProps {
+  name: string;
+  value: string;
+}
 interface NavigationsProps {
   name: string;
   href: string;
@@ -35,20 +39,20 @@ export const navigations: Array<NavigationsProps> = [
 ]
 // Social
 export const socials: Array<SocialsProps> = [
-  { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} />, },
-  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} />, },
-  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} />, },
+  { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} className="hover:text-blue-600" />, },
+  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} className="text-white hover:text-neutral-600" />, },
+  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} className="text-white hover:text-pink-600" />, },
 ]
 // Theme
-export const themes: Array<NameProps> = [
-  { name: "System", },
-  { name: "Light", },
-  { name: "Dark", }, 
+export const themes: Array<ValueProps> = [
+  { name: "System", value: "system", },
+  { name: "Light", value: "light", },
+  { name: "Dark", value: "dark", }, 
 ]
 // Language
-export const languages: Array<NameProps> = [
-  { name: "English", },
-  { name: "繁體中文", },
+export const languages: Array<ValueProps> = [
+  { name: "English", value: "en", },
+  { name: "繁體中文", value: "tw", },
 ]
 // Paragraph
 export const paragraphs: Array<NameProps> = [
@@ -107,9 +111,9 @@ interface ContactsProps {
   icon: ReactElement;
 }
 export const contacts: Array<ContactsProps> = [
-  { name: "V6P 2G8 Vancouver, Canada", icon: <HiMapPin size={iconSize} className="text-blue" />, },
-  { name: "quien697@gmail.com", icon: <HiEnvelope size={iconSize} className="text-blue" />, },
-  { name: "(337) 318-5945", icon: <AiFillPhone size={iconSize} className="text-blue" />, },
+  { name: "V6P 2G8 Vancouver, Canada", icon: <HiMapPin size={iconSize} className="text-blue-600" />, },
+  { name: "quien697@gmail.com", icon: <HiEnvelope size={iconSize} className="text-blue-600" />, },
+  { name: "(337) 318-5945", icon: <AiFillPhone size={iconSize} className="text-blue-600" />, },
 ]
 // Portfolio
 interface PortfolioProps {

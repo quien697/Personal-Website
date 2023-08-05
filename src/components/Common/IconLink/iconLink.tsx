@@ -6,7 +6,7 @@ interface IconLinkProps {
   children: React.ReactNode;
 }
 
-const IconLink: React.FC<IconLinkProps>  = ({ href, children }) => {
+const IconLink: React.FC<IconLinkProps> = ({ href, children }) => {
   if (typeof(href) == "undefined") { return }
 
   return (
