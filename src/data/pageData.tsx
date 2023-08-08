@@ -1,7 +1,7 @@
-import { ReactElement } from "react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { HiEnvelope, HiMapPin } from "react-icons/hi2"
-import { AiFillPhone } from "react-icons/ai"
+import { ReactElement } from 'react';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { HiEnvelope, HiMapPin } from 'react-icons/hi2'
+import { AiFillPhone } from 'react-icons/ai'
 
 const iconSize = 26;
 
@@ -40,8 +40,8 @@ export const navigations: Array<NavigationsProps> = [
 // Social
 export const socials: Array<SocialsProps> = [
   { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} className="hover:text-blue-600" />, },
-  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} className="text-white hover:text-neutral-600" />, },
-  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} className="text-white hover:text-pink-600" />, },
+  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} className="hover:text-neutral-600" />, },
+  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} className="hover:text-pink-600" />, },
 ]
 // Theme
 export const themes: Array<ValueProps> = [
@@ -52,13 +52,13 @@ export const themes: Array<ValueProps> = [
 // Language
 export const languages: Array<ValueProps> = [
   { name: "English", value: "en", },
-  { name: "繁體中文", value: "tw", },
+  { name: "繁體中文", value: "zh_tw", },
 ]
 // Paragraph
 export const paragraphs: Array<NameProps> = [
-  { name: "Hi, My name is Tsung-Hsun, or call me Quien. I have a 1+ years of experience in Android app development using Java and 4+ years of experience in Web development, and learned iOS development with Swift for 1 year." },
-  { name: "Coding is a passion for me, not just a job. Although the journey has not been easy, I am proud to have overcome every challenge that came my way. My passion for coding has never wavered, and I remain committed to pursuing new challenges to further enhance my skills and knowledge." },
-  { name: "I have wide range of hobbies and passions. From reading, playing sports, running, traveling. I am always seeking new experiences and love to keep myself engaged and learning new things." },
+  { name: "AboutMe-Part1" },
+  { name: "AboutMe-Part2" },
+  { name: "AboutMe-Part3" },
 ]
 // Skill
 export const skills: Array<NameProps> = [
@@ -85,35 +85,26 @@ export const skills: Array<NameProps> = [
 // Experience
 export const experiences: Array<ExperienceProps> = [
   { 
-    position: "Full Stack Developer", 
-    company: "Freelance", 
-    location: "Taipei, Taiwan", 
+    position: "Position0", 
+    company: "Company0", 
+    location: "Location0", 
     date: "2018-2022", 
-    detail: "As a freelance with our team, I mainly maintain admin website to optimized database search functions, optimized website more user-friendly and develope android mobile app.",
+    detail: "Detail0",
   },
   { 
-    position: "Junior Web Developer", 
-    company: "Daher Infomation Co., Ltd", 
-    location: "Taoyuan, Taiwan", 
+    position: "Position1", 
+    company: "Company1", 
+    location: "Location1", 
     date: "2013-2014", 
-    detail: "Daher is a commercial software development company, like enterprise erp systems,  POS system, financial accounting system, etc.\n I mainly help the company to optimize website more user-friendly and evelope a better performance database that increased query speed.",
+    detail: "Detail1",
   },
   { 
-    position: "Mobile Application Developer", 
-    company: "Sunlight Infomation Co., Ltd", 
-    location: "Taipei, Taiwan", date: "2011-2012", 
-    detail: "Sunlight is a sofeware company. I mainly help company to maintain the exiting website and develop android moblie app with a team.",
+    position: "Position2", 
+    company: "Company2", 
+    location: "Location2",
+    date: "2011-2012", 
+    detail: "Detail2",
   },
-]
-// Contact
-interface ContactsProps {
-  name: string;
-  icon: ReactElement;
-}
-export const contacts: Array<ContactsProps> = [
-  { name: "V6P 2G8 Vancouver, Canada", icon: <HiMapPin size={iconSize} className="text-blue-600" />, },
-  { name: "quien697@gmail.com", icon: <HiEnvelope size={iconSize} className="text-blue-600" />, },
-  { name: "(337) 318-5945", icon: <AiFillPhone size={iconSize} className="text-blue-600" />, },
 ]
 // Portfolio
 interface PortfolioProps {
@@ -126,18 +117,28 @@ interface PortfolioProps {
 }
 export const portfolios: Array<PortfolioProps> = [
   { 
-    name: "Personal Website", 
-    description: "",
-    image: "/personal-website.png",
+    name: "Name0", 
+    description: "Description0",
+    image: "/assets/personal-website.png",
     technologies: [ { name: "Next.js", }, { name: "TypeScript", }, { name: "Tailwind" } ],
     link: "https://www.google.com/",
   },
   { 
-    name: "chatwis.io", 
-    description: "Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.Built on ChatGPT API and Chatwis is built on openai technologies with gpt-3 models.",
-    image: "/personal-website.png",
+    name: "Name1", 
+    description: "Description1",
+    image: "/assets/personal-website.png",
     technologies: [ { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, ],
     github: "https://www.google.com/",
     link: "https://www.google.com/",
   },
+]
+// Contact
+interface ContactsProps {
+  name: string;
+  icon: ReactElement;
+}
+export const contacts: Array<ContactsProps> = [
+  { name: "V6P 2G8 Vancouver, Canada", icon: <HiMapPin size={iconSize} className="text-blue-600" />, },
+  { name: "quien697@gmail.com", icon: <HiEnvelope size={iconSize} className="text-blue-600" />, },
+  { name: "(337) 318-5945", icon: <AiFillPhone size={iconSize} className="text-blue-600" />, },
 ]

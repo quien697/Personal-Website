@@ -1,7 +1,8 @@
-import React from "react";
-import { animateScroll as scroll } from "react-scroll";
-import useBackToTop from "@/hooks/useBackToTop";
-import { FaChevronUp } from "react-icons/fa";
+'use client';
+import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+import useBackToTop from '@/hooks/useBackToTop';
+import { FaChevronUp } from 'react-icons/fa';
 
 const BackToTopButton: React.FC = () => {
   const showBackToTopBtn = useBackToTop();

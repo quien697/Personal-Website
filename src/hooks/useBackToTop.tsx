@@ -1,8 +1,9 @@
+'use client';
+import { useState, useEffect } from 'react';
+
 /*
     Features：show the buton of back to top if position > 400, otherwise no.
 */
-import { useState, useEffect } from 'react';
-
 const useBackToTop = () => {
   const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
   useEffect(() => {

@@ -1,8 +1,12 @@
-import React from "react";
-import { contacts, socials } from "@/data/pageData"
-import IconLink from "../Common/IconLink/iconLink";
+'use client';
+import React from 'react';
+import { contacts, socials } from '@/data/pageData';
+import IconLink from '../Common/IconLink/iconLink';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className="bg-white dark:bg-neutral-800">
       <div className="flex flex-col items-center px-10 py-16 lg:px-24">
@@ -14,7 +18,7 @@ const Header = () => {
             </p>
           )
         })}
-        <h3 className="text-2xl text-bold mb-4 mt-2 lg:text-3xl">Follow Me</h3>
+        <h3 className="text-2xl text-bold mb-4 mt-2 lg:text-3xl">{t("FollowMe")}</h3>
         <ul className="flex space-x-4">
           {socials.map((item, idx) => {
             return (

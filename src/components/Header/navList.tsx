@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { navigations } from '@/data/pageData';
+import { useTranslation } from 'react-i18next';
 
 interface SettingListProps {
   className: string;
@@ -8,6 +9,8 @@ interface SettingListProps {
 }
 
 const NavList: React.FC<SettingListProps> = ({ className, onClick }) => {
+  const { t } = useTranslation();
+
   return (
     <ul className={`flex-col py-4 ${className}`}>
       {navigations.map((item) => {
@@ -22,7 +25,7 @@ const NavList: React.FC<SettingListProps> = ({ className, onClick }) => {
               className="cursor-pointer hover:text-blue-600 hover:font-bold" 
               onClick={onClick}
             >
-              {item.name}</Link>
+              {t(`${item.name}`)}</Link>
           </li>
         )
       })}

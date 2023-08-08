@@ -1,1 +1,1 @@
-export { default } from "./backToTopButton";
+export { default } from './backToTopButton';

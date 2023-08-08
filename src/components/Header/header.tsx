@@ -1,21 +1,23 @@
+'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Link } from 'react-scroll';
 import { useTheme } from 'next-themes';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
-import { navigations, socials, themes } from '@/data/pageData';
+import { socials, themes } from '@/data/pageData';
 import NavList from './navList';
 import SettingList from './settingList';
 import IconLink from '../Common/IconLink';
+import i18n from '@/i18n/i18n';
+import { useTranslation } from 'react-i18next';
 
-const iconSize = 24;
 const menuIconSize = 30;
 
 const Header = () => {
+  const { t } = useTranslation();
   const [ navbar, setNavbar ] = useState(false);
   const { theme, systemTheme, setTheme } = useTheme();
   const curTheme = theme === themes[0].value ? systemTheme : theme
-  
+
   return (
     <header className="sticky top-0 z-40">
       <nav className="flex top-0 left-0 w-full h-auto bg-neutral-950 border-r-1 shadow z-10 py-2 px-0 overflow-visible lg:fixed lg:jsutify-start lg:w-64 lg:h-full lg:overflow-hidden">
@@ -23,9 +25,10 @@ const Header = () => {
           {/* Headshot & Name */}
           <div className="lg:mt-4">
             <span className="hidden bg-neutral-700 rounded-full p-2 lg:inline-block lg:mb-1">
-              <Image src="/headshot.JPG" width={150} height={150} priority alt="I am Tsung-Hsun Liu." className="block w-full h-auto rounded-full" />
+              <Image src="/assets/headshot.JPG" width={150} height={150} priority alt={t("FullName")} className="block w-full h-auto rounded-full" />
             </span>
-            <h1 className="text-center text-2xl mb-0 lg:block">Tsung-Hsun Liu</h1>
+            <h1 className="text-center text-2xl mb-0 lg:block">{t("FullName")}</h1>
+            {/* <h1 className="text-center text-2xl mb-0 lg:block">123</h1> */}
           </div>
           {/* Mobile Navbar */}
           <div className={`min-w-fit h-auto bg-neutral-950 ${navbar ? "absolute top-[130%] right-2 rounded-md mt-0 px-4 z-50 shadow" : "hidden"}`}>
@@ -35,10 +38,10 @@ const Header = () => {
             <SettingList
               theme={theme || themes[0].value} 
               curTheme={curTheme || themes[0].value} 
-              language="en"
+              language={i18n.language}
               className="flex border-t-2 bg-neutral-950 py-2 lg:hidden"
               onThemeChange={(selectedTheme) => setTheme(selectedTheme)}
-              onLanguageChange={(selectedTheme) => setTheme(selectedTheme)}
+              onLanguageChange={(selectedLanguage) => i18n.changeLanguage(selectedLanguage)}
             />
           </div>
           {/* Desk - NavList */}
@@ -57,10 +60,10 @@ const Header = () => {
           <SettingList
             theme={theme || themes[0].value} 
             curTheme={curTheme || themes[0].value} 
-            language="en"
-            className="flex hidden list-none border-t-2 bg-neutral-950 lg:flex"
+            language={i18n.language}
+            className="hidden list-none border-t-2 bg-neutral-950 lg:flex"
             onThemeChange={(selectedTheme) => setTheme(selectedTheme)}
-            onLanguageChange={(selectedTheme) => setTheme(selectedTheme)}
+            onLanguageChange={(selectedTheme) => i18n.changeLanguage(selectedTheme)}
           />
           {/* Mobile - Toggle Button */}
           <button className="p-2 lg:hidden" onClick={() => setNavbar(!navbar)}>
