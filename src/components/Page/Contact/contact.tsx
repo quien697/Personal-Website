@@ -25,7 +25,7 @@ export default function ContactSection() {
     <Section id="contact" backgroundColor="bg-neutral-100 dark:bg-neutral-700">
       <Heading name={t("ContactMe")} backgroundName="Contact Me" />
       <div className="flex flex-col items-center g-y-4">
-        <h3 className="text-2xl text-bold mb-4 lg:text-3xl">{t("GetInTouch")}</h3>
+        <h3 className="text-xl text-bold mb-4 lg:text-3xl md:text-2xl">{t("GetInTouch")}</h3>
         <form ref={form} onSubmit={sendEmail}>
           <div className="flex flex-wrap justify-center text-white gap-4">
             <input name="name" required placeholder={t("Name")} className="grow bg-neutral-800 outline-blue-600 rounded-md px-3 py-2"></input>

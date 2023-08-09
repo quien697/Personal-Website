@@ -14,11 +14,11 @@ const Header = () => {
           return (
             <p key={idx} className="flex flex-row mb-4">
               {item.icon}
-              <span className="w-full pl-2 text-sm lg:text-base">{item.name}</span>
+              <span className="w-full pl-2 lg:text-lg md:text-md">{item.name}</span>
             </p>
           )
         })}
-        <h3 className="text-2xl text-bold mb-4 mt-2 lg:text-3xl">{t("FollowMe")}</h3>
+        <h3 className="text-xl text-bold mb-4 mt-2 lg:text-3xl md:text-2xl">{t("FollowMe")}</h3>
         <ul className="flex space-x-4">
           {socials.map((item, idx) => {
             return (

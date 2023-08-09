@@ -15,7 +15,7 @@ export default function AboutSection() {
       {/* Content */}
       <div className="flex flex-col space-y-10 justify-center lg:flex-row lg:space-x-10 lg:space-y-0 lg:p-4 lg:text-left">
         <div className="lg:w-7/12">
-          <h1 className="text-center text-2xl font-bold mb-4 lg:text-left lg:text-3xl">{t("KnowMe")}</h1>
+          <h1 className="text-center text-xl font-bold mb-4 lg:text-left lg:text-3xl md:text-2xl">{t("KnowMe")}</h1>
           <div className="text-lg space-y-6 lg:text-xl">
             
             {paragraphs.map((item, idx) => {

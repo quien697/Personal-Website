@@ -27,8 +27,7 @@ const Header = () => {
             <span className="hidden bg-neutral-700 rounded-full p-2 lg:inline-block lg:mb-1">
               <Image src="/assets/headshot.JPG" width={150} height={150} priority alt={t("FullName")} className="block w-full h-auto rounded-full" />
             </span>
-            <h1 className="text-center text-2xl mb-0 lg:block">{t("FullName")}</h1>
-            {/* <h1 className="text-center text-2xl mb-0 lg:block">123</h1> */}
+            <h1 className="text-center text-xl mb-0 lg:block lg:text-2xl">{t("FullName")}</h1>
           </div>
           {/* Mobile Navbar */}
           <div className={`min-w-fit h-auto bg-neutral-950 ${navbar ? "absolute top-[130%] right-2 rounded-md mt-0 px-4 z-50 shadow" : "hidden"}`}>
