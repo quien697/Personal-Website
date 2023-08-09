@@ -43,7 +43,7 @@
   "Website": "網站",
   "Link": "連結",
   "Name0": "個人網站", 
-  "Description0": "",
+  "Description0": "這是一個簡易的個人網站, 且沒有任何後端支援.",
   "Name1": "chatwis.io", 
   "Description1": "Chatwis 是個基於 ChatGPT API 構建的手機軟體並使用 openai 技術和 gpt-3 模型.",
 
