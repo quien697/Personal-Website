@@ -40,8 +40,8 @@ export const navigations: Array<NavigationsProps> = [
 // Social
 export const socials: Array<SocialsProps> = [
   { name: "Linkedin", href: "https://www.linkedin.com/in/quien697/", icon: <FaLinkedin size={iconSize} className="hover:text-blue-600" />, },
-  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} className="hover:text-neutral-600" />, },
-  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} className="hover:text-pink-600" />, },
+  { name: "Github", href: "https://github.com/quien697/", icon: <FaGithub size={iconSize} className="hover:text-blue-600" />, },
+  { name: "Instagram", href: "https://www.instagram.com/quien697/", icon: <FaInstagram size={iconSize} className="hover:text-blue-600" />, },
 ]
 // Theme
 export const themes: Array<ValueProps> = [

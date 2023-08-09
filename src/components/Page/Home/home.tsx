@@ -10,14 +10,14 @@ export default function HomeSection() {
   const { t } = useTranslation()
 
   return (
-    <Section id="home" backgroundColor="bg-neutral-100 dark:bg-neutral-700" className="flex flex-col min-h-fit w-full px-4 py-16 lg:min-h-screen">
+    <Section id="home" backgroundColor="bg-neutral-100 dark:bg-neutral-700" className="flex flex-col min-h-fit px-4 py-16 lg:min-h-screen">
       <div className="flex flex-col justify-start items-center space-y-3 my-16 lg:justify-center lg:space-y-6 lg:my-auto">
         <div>
           <Image 
             src="/assets/headshot.JPG" 
             width={250} 
             height={250} 
-            priority alt="I am Tsung-Hsun Liu" 
+            priority alt={t("FullName")}
             className="rounded-full shadow-2xl shadow-neutral-800 lg:hidden" 
           />
         </div>
@@ -28,7 +28,7 @@ export default function HomeSection() {
           {t("Iam")}<span className="text-blue-600">{t("Full-Stack-Developer")}</span> & <span className="text-blue-600">{t("iOS-Developer")}</span>{t("BaseOn")}
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center hover:text-blue-600 cursor-pointer">
         <Link to="about" spy smooth duration={500}>
           <RiArrowDownSLine size={35} className="animate-bounce" />
         </Link>

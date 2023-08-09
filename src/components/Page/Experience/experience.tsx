@@ -19,7 +19,7 @@ export default function ExperienceSection() {
                 <div className={`flex absolute top-0 -left-7 justify-center w-14 h-14 rounded-full bg-white dark:bg-neutral-700 border-blue-600 border-4 shadow shadow-neutral-700 ${(idx%2 == 0 ? "lg:left-auto lg:-right-7" : "")}`}>
                   <span className="my-auto font-bold">{item.date.substring(5,9)}</span>
                 </div>
-                <div className="relative bg-neutral-800 rounded-lg ml-10 p-6 lg:mr-10">
+                <div className={`relative bg-neutral-800 rounded-lg p-6 ${(idx%2 == 0 ? "ml-10 lg:ml-0 mr-0 lg:mr-10" : "ml-10 mr-0")}`}>
                   <h2>
                     <span className="font-bold text-white text-2xl">{t(`${item.position}`)}</span>
                     <span className="text-xs text-neutral-400 pl-3">{item.date}</span>
