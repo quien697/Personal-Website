@@ -22,10 +22,10 @@ Would you like to customize the default import alias?  Yes
 
 ## Technologies used ([package.json](https://github.com/quien697/personal-website/blob/main/package.json))
 
-1. Next.js : "13.4.12"
-2. TypeScript : "5.1.6"
-3. ESLint : "8.46.0"
-4. Tailwind CSS : "3.3.3"
+1. [Next.js](https://nextjs.org/)
+2. [TypeScript](https://www.typescriptlang.org)
+3. [ESLint](https://eslint.org)
+4. [Tailwind CSS](https://tailwindcss.com)
 
 ## Other Dependencies ([package.json](https://github.com/quien697/personal-website/blob/main/package.json))
 
@@ -56,9 +56,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
