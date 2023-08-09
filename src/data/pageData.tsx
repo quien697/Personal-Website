@@ -121,16 +121,16 @@ export const portfolios: Array<PortfolioProps> = [
     description: "Description0",
     image: "/assets/personal-website.png",
     technologies: [ { name: "Next.js", }, { name: "TypeScript", }, { name: "Tailwind" } ],
-    link: "https://www.google.com/",
+    link: "https://www.tsunghsun.me/",
   },
-  { 
-    name: "Name1", 
-    description: "Description1",
-    image: "/assets/personal-website.png",
-    technologies: [ { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, { name: "iOS", }, { name: "RxSwift", }, ],
-    github: "https://www.google.com/",
-    link: "https://www.google.com/",
-  },
+  // { 
+  //   name: "Name1", 
+  //   description: "Description1",
+  //   image: "/assets/personal-website.png",
+  //   technologies: [ { name: "iOS", }, { name: "Swift", }, { name: "RxSwift", }, ],
+  //   github: "https://www.google.com/",
+  //   link: "https://www.google.com/",
+  // },
 ]
 // Contact
 interface ContactsProps {
