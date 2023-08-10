@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { navigations } from '@/data/pageData';
-import { useTranslation } from 'react-i18next';
+import { useLocalizedData } from '@/data';
 
 interface SettingListProps {
   className: string;
@@ -9,11 +8,11 @@ interface SettingListProps {
 }
 
 const NavList: React.FC<SettingListProps> = ({ className, onClick }) => {
-  const { t } = useTranslation();
+  const { navItems } = useLocalizedData();
 
   return (
     <ul className={`flex-col py-4 ${className}`}>
-      {navigations.map((item) => {
+      {navItems.map((item) => {
         return (
           <li key={item.name} className="py-2 w-full lg:py-3">
             <Link 
@@ -25,7 +24,7 @@ const NavList: React.FC<SettingListProps> = ({ className, onClick }) => {
               className="cursor-pointer hover:text-blue-600 hover:font-bold" 
               onClick={onClick}
             >
-              {t(`${item.name}`)}</Link>
+              {item.name}</Link>
           </li>
         )
       })}

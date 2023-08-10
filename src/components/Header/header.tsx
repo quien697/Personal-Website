@@ -3,20 +3,18 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
-import { socials, themes } from '@/data/pageData';
 import NavList from './navList';
 import SettingList from './settingList';
 import IconLink from '../Common/IconLink';
 import i18n from '@/i18n/i18n';
-import { useTranslation } from 'react-i18next';
-
-const menuIconSize = 30;
+import { useLocalizedData } from '@/data';
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { constants, socials, themes } = useLocalizedData();
   const [ navbar, setNavbar ] = useState(false);
   const { theme, systemTheme, setTheme } = useTheme();
   const curTheme = theme === themes[0].value ? systemTheme : theme
+  const menuIconSize = 30;
 
   return (
     <header className="sticky top-0 z-40">
@@ -25,9 +23,9 @@ const Header = () => {
           {/* Headshot & Name */}
           <div className="lg:mt-4">
             <span className="hidden bg-neutral-700 rounded-full p-2 lg:inline-block lg:mb-1">
-              <Image src="/assets/headshot.JPG" width={150} height={150} priority alt={t("FullName")} className="block w-full h-auto rounded-full" />
+              <Image src="/assets/headshot.JPG" width={150} height={150} priority alt={constants.FULLNAME} className="block w-full h-auto rounded-full" />
             </span>
-            <h1 className="text-center text-xl mb-0 lg:block lg:text-2xl">{t("FullName")}</h1>
+            <h1 className="text-center text-xl mb-0 lg:block lg:text-2xl">{constants.FULLNAME}</h1>
           </div>
           {/* Mobile Navbar */}
           <div className={`min-w-fit h-auto bg-neutral-950 ${navbar ? "absolute top-[130%] right-2 rounded-md mt-0 px-4 z-50 shadow" : "hidden"}`}>
