@@ -2,7 +2,7 @@ import React from 'react';
 import Select from './select';
 import { MdLanguage } from 'react-icons/md'
 import { RiSunLine, RiMoonFill } from 'react-icons/ri';
-import { themes, languages } from '@/data/pageData';
+import { useLocalizedData } from '@/data';
 
 interface SettingListProps {
   theme: string;
@@ -14,6 +14,7 @@ interface SettingListProps {
 }
 
 const SettingList: React.FC<SettingListProps> = ({ theme, curTheme, language, className, onThemeChange, onLanguageChange }) => {
+  const { themes, languages } = useLocalizedData();
   const iconSize = 24;
 
   return (

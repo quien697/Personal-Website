@@ -1,57 +1,110 @@
 {
-  "Home": "首頁",
-  "About": "關於我",
-  "Experience": "經驗",
-  "Portfolio": "作品",
-  "Contact": "聯絡我",
-  "System":  "系統",
-  "Light": "白天",
-  "Dark": "夜晚",
-
-  "Welcome": "歡迎",
-  "FullName": "劉宗勲",
-  "Introduce-Myself":"嗨, 我是 劉宗勲!",
-  "Full-Stack-Developer": "全端開發工程師",
-  "iOS-Developer": "iOS 開發工程師",
-  "Iam": "我是",
-  "CallMe": "也可以稱呼我 ",
-  "BaseOn": " 目前住在加拿大的溫哥華",
-
-  "AboutMe": "關於我",
-  "KnowMe": "深入認識我",
-  "MySkills": "所掌握的技能",
-  "AboutMe-Part1": "嗨我是宗勳或者叫我 Quien, 擁有 1 年以上使用 Java 進行 Android 手機軟體開發經驗以及 4 年以上 web 開發經驗, 並學了 1 年 使用Swift 進行 iOS 開發手機軟體開發.",
-  "AboutMe-Part2": "對我來說, 編碼對我來說不僅僅是一份工作, 更是一種熱情. 儘管在編碼的旅程並不輕鬆, 但我很自豪能夠克服遇到的每一個挑戰, 且致力於追求新的挑戰，以進一步提高我的技能和知識.",
-  "AboutMe-Part3": "另外我有廣泛的愛好和熱情, 從閱讀、運動、跑步到旅行. 我總是在尋求新的體驗, 喜歡讓自己保持專注並學習新事物.",
-
-  "RelativeExperience": "相關經驗",
-  "Position0": "全端開發工程師", 
-  "Company0": "自由職業者", 
-  "Location0" : "台北, 台灣", 
-  "Detail0": "作為一個自由職業者跟我們的外包團隊,我的任務是維護管理者網站使網站更人性化, 資料庫處理速度更快, 以及 Android 手機軟體開發.",
-  "Position1": "初級網頁開發工程師", 
-  "Company1": "大禾資訊有限公司", 
-  "Location1": "桃園, 台灣", 
-  "Detail1": "大禾資訊是一間開發商業軟體公司, 像是企業ERP系統, POS系統, 財務會計系統等等. 我主要負責是幫忙公司把現有的系統網站優化的更人性化與提高資料庫處理速度.",
-  "Position2": "實習 Android 開發工程師", 
-  "Company2": "康曜資訊有限公司", 
-  "Location2": "台北, 台灣",
-  "Detail2": "康曜資訊是一間軟體公司, 我主要負責幫公司開發新的Android手機軟體以及維護現有的網站.",
-
-  "Portfolios": "作品集",
-  "Technologies": "相關技術",
-  "Website": "網站",
-  "Link": "連結",
-  "Name0": "個人網站", 
-  "Description0": "這是一個簡易的個人網站, 且沒有任何後端支援.",
-  "Name1": "chatwis.io", 
-  "Description1": "Chatwis 是個基於 ChatGPT API 構建的手機軟體並使用 openai 技術和 gpt-3 模型.",
-
-  "ContactMe": "聯繫我",
-  "GetInTouch": "與我取得聯繫",
-  "Name": "姓名",
-  "Email": "電子信箱",
-  "Message": "訊息",
-  "SendMessage": "發送訊息",
-  "FollowMe": "請關注我"
+  "constants" : {
+    "FULLNAME": "劉宗勲",
+    "WELCOME": "歡迎",
+    "INTRODUCE_MYSELF":"嗨, 我是 劉宗勲!",
+    "FULL_STACK_DEVELOPER": "全端開發工程師",
+    "IOS_DEVELOPER": "iOS 開發工程師",
+    "I_AM": "我是",
+    "CALL_ME": "也可以稱呼我 ",
+    "BASE_ON": " 目前住在加拿大的溫哥華",
+    "ABOUT_ME": "關於我",
+    "KNOW_ME": "深入認識我",
+    "MY_SKILLS": "所掌握的技能",
+    "EXPERIENCE": "相關經驗",
+    "PORTFOLIO": "作品集",
+    "TECHNOLOGIES": "相關技術",
+    "WEBSITE": "網站",
+    "LINK": "連結",
+    "CONTACT_ME": "聯繫我",
+    "GET_IN_TOUCH": "與我取得聯繫",
+    "NAME": "姓名",
+    "EMAIL": "電子信箱",
+    "MESSAGE": "訊息",
+    "SEND_MESSAGE": "發送訊息",
+    "FOLLOW_ME": "請關注我"
+  },
+  "navItems": [
+    {
+      "name": "首頁",
+      "href": "home"
+    },
+    {
+      "name": "關於我",
+      "href": "about"
+    },
+    {
+      "name": "經驗",
+      "href": "experience"
+    },
+    {
+      "name": "作品",
+      "href": "portfolio"
+    },
+    {
+      "name": "聯絡我",
+      "href": "contact"
+    }
+  ],
+  "themes": [
+    {
+      "name": "系統",
+      "value": "system"
+    },
+    {
+      "name": "白天",
+      "value": "light"
+    },
+    {
+      "name": "黑夜",
+      "value": "dark"
+    }
+  ],
+  "aboutMeContents": [
+    {
+      "name": "嗨我是宗勳或者叫我 Quien, 擁有 1 年以上使用 Java 進行 Android 手機軟體開發經驗以及 4 年以上 web 開發經驗, 並學了 1 年 使用Swift 進行 iOS 開發手機軟體開發."
+    },
+    { 
+      "name": "對我來說, 編碼對我來說不僅僅是一份工作, 更是一種熱情. 儘管在編碼的旅程並不輕鬆, 但我很自豪能夠克服遇到的每一個挑戰, 且致力於追求新的挑戰，以進一步提高我的技能和知識."
+    },
+    { 
+      "name": "另外我有廣泛的愛好和熱情, 從閱讀、運動、跑步到旅行. 我總是在尋求新的體驗, 喜歡讓自己保持專注並學習新事物."
+    }
+  ],
+  "experiences": [
+    { 
+      "position": "全端開發工程師", 
+      "company": "自由職業者", 
+      "location": "台北, 台灣", 
+      "date": "2018-2022", 
+      "detail": "作為一個自由職業者跟我們的外包團隊,我的任務是維護管理者網站使網站更人性化, 資料庫處理速度更快, 以及 Android 手機軟體開發."
+    },
+    { 
+      "position": "初級網頁開發工程師", 
+      "company": "大禾資訊有限公司", 
+      "location": "桃園, 台灣", 
+      "date": "2013-2014", 
+      "detail": "大禾資訊是一間開發商業軟體公司, 像是企業ERP系統, POS系統, 財務會計系統等等. 我主要負責是幫忙公司把現有的系統網站優化的更人性化與提高資料庫處理速度."
+    },
+    { 
+      "position": "實習 Android 開發工程師", 
+      "company": "康曜資訊有限公司", 
+      "location": "台北, 台灣",
+      "date": "2011-2012", 
+      "detail": "康曜資訊是一間軟體公司, 我主要負責幫公司開發新的Android手機軟體以及維護現有的網站."
+    }
+  ],
+  "portfolios": [
+    {
+      "name": "個人網站",
+      "description": "這是一個簡易的個人網站, 沒有任何後端支援.",
+      "image": "/assets/personal-website.png",
+      "technologies": [
+        { "name": "Next.js" },
+        { "name": "TypeScript" },
+        { "name": "Tailwind" }
+      ],
+      "link": "https://tsunghsun.me/"
+    }
+  ]
 }
