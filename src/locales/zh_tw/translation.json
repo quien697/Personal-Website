@@ -5,7 +5,7 @@
     "INTRODUCE_MYSELF":"嗨, 我是 劉宗勲!",
     "FULL_STACK_DEVELOPER": "全端開發工程師",
     "IOS_DEVELOPER": "iOS 開發工程師",
-    "I_AM": "我是",
+    "I_AM": "我是 ",
     "CALL_ME": "也可以稱呼我 ",
     "BASE_ON": " 目前住在加拿大的溫哥華",
     "ABOUT_ME": "關於我",
@@ -62,7 +62,7 @@
   ],
   "aboutMeContents": [
     {
-      "name": "嗨我是宗勳或者叫我 Quien, 擁有 1 年以上使用 Java 進行 Android 手機軟體開發經驗以及 4 年以上 web 開發經驗, 並學了 1 年 使用Swift 進行 iOS 開發手機軟體開發."
+      "name": "嗨我是宗勳或者叫我 Quien, 擁有 1 年以上使用 Java 進行 Android 手機軟體開發經驗以及 4 年以上 web 開發經驗, 並擁有 1 年學習與開發經驗使用 Swift 進行 iOS 開發手機軟體開發."
     },
     { 
       "name": "對我來說, 編碼對我來說不僅僅是一份工作, 更是一種熱情. 儘管在編碼的旅程並不輕鬆, 但我很自豪能夠克服遇到的每一個挑戰, 且致力於追求新的挑戰，以進一步提高我的技能和知識."
@@ -97,14 +97,28 @@
   "portfolios": [
     {
       "name": "個人網站",
+      "status": "2023",
       "description": "這是一個簡易的個人網站, 沒有任何後端支援.",
-      "image": "/assets/personal-website.png",
+      "image": "/assets/portfolio-personal-website.png",
       "technologies": [
         { "name": "Next.js" },
         { "name": "TypeScript" },
         { "name": "Tailwind" }
       ],
+      "github": "https://github.com/quien697/personal-website",
       "link": "https://tsunghsun.me/"
+    },
+    {
+      "name": "Chatwis.ai",
+      "status": "正在開發中",
+      "description": "Chatwis 基於 ChatGPT API 技術開發的 iOS 手機應用程式，並使用 MVVM、核心數據來實現。",
+      "image": "/assets/portfolio-chatwis.png",
+      "technologies": [
+        { "name": "iOS" },
+        { "name": "Swift" },
+        { "name": "RxSwift" },
+        { "name": "MVVM" }
+      ]
     }
   ]
 }
