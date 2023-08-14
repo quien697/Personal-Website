@@ -22,7 +22,10 @@ export default function PortfolioSection() {
                   <Image src={item.image} alt={item.name} width={1000} height={1000} className="rounded-lg shadow-lg shadow-neutral-900" />
                 </div>
                 <div className="flex flex-col gap-4 mt-8 lg:w-1/2 lg:mt-2">
-                  <h1 className="text-4xl font-bold mb-2">{item.name}</h1>
+                  <h1 className="mb-2">
+                    <span className="text-4xl font-bold">{item.name}</span>
+                    <span className="ml-4 text-neutral-400 text-sm">{item.status}</span>
+                  </h1>
                   <p className="text-xl leading-7">{item.description}</p>
                   <ul>
                     <DetailList title={constants.TECHNOLOGIES} isLink={false}>

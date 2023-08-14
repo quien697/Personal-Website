@@ -5,7 +5,7 @@
     "INTRODUCE_MYSELF": "Hi, I'm Tsung-Hsun Liu!",
     "FULL_STACK_DEVELOPER": "Full-Stack Developer",
     "IOS_DEVELOPER": "iOS Developer",
-    "I_AM": "I am",
+    "I_AM": "I am ",
     "CALL_ME": "You can also call me ",
     "BASE_ON": " based in Vancouver, Canada.",
     "ABOUT_ME": "About Me",
@@ -97,14 +97,28 @@
   "portfolios": [
     {
       "name": "Personal Website",
+      "status": "2023",
       "description": "This is a simple personal website project without any backend.",
-      "image": "/assets/personal-website.png",
+      "image": "/assets/portfolio-personal-website.png",
       "technologies": [
         { "name": "Next.js" },
         { "name": "TypeScript" },
         { "name": "Tailwind" }
       ],
+      "github": "https://github.com/quien697/personal-website",
       "link": "https://tsunghsun.me/"
+    },
+    {
+      "name": "Chatwis.ai",
+      "status": "currently work on it",
+      "description": "Chatwis is built on ChatGPT API technologies and implement it with MVVM, core data.",
+      "image": "/assets/portfolio-chatwis.png",
+      "technologies": [
+        { "name": "iOS" },
+        { "name": "Swift" },
+        { "name": "RxSwift" },
+        { "name": "MVVM" }
+      ]
     }
   ]
 }

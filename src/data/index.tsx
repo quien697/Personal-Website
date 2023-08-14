@@ -120,6 +120,7 @@ export const useLocalizedData = () => {
   // Portfolio
   interface PortfolioProps {
     name: string;
+    status: string;
     description: string;
     image: string;
     technologies: Array<NameProps>;
