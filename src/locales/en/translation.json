@@ -110,7 +110,7 @@
     },
     {
       "name": "Chatwis.ai",
-      "status": "currently work on it",
+      "status": "2023",
       "description": "Chatwis is built on ChatGPT API technologies and implement it with MVVM, core data.",
       "image": "/assets/portfolio-chatwis.png",
       "technologies": [

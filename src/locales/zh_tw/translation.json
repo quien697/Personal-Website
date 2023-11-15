@@ -110,7 +110,7 @@
     },
     {
       "name": "Chatwis.ai",
-      "status": "正在開發中",
+      "status": "2023",
       "description": "Chatwis 基於 ChatGPT API 技術開發的 iOS 手機應用程式，並使用 MVVM、核心數據來實現。",
       "image": "/assets/portfolio-chatwis.png",
       "technologies": [
