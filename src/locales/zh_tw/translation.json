@@ -62,7 +62,7 @@
   ],
   "aboutMeContents": [
     {
-      "name": "嗨我是宗勳或者叫我 Quien, 擁有 1 年以上使用 Java 進行 Android 手機軟體開發經驗以及 4 年以上 web 開發經驗, 並擁有 1 年學習與開發經驗使用 Swift 進行 iOS 開發手機軟體開發."
+      "name": "我是宗勳或者叫我 Quien, 擁有 1 年以上使用 Java 進行 Android 手機軟體開發經驗以及 4 年以上 web 開發經驗, 並擁有 1 年學習與開發經驗使用 Swift 進行 iOS 開發手機軟體開發."
     },
     { 
       "name": "對我來說, 編碼對我來說不僅僅是一份工作, 更是一種熱情. 儘管在編碼的旅程並不輕鬆, 但我很自豪能夠克服遇到的每一個挑戰, 且致力於追求新的挑戰，以進一步提高我的技能和知識."
@@ -73,21 +73,21 @@
   ],
   "experiences": [
     { 
-      "position": "全端開發工程師", 
+      "position": "軟體開發工程師", 
       "company": "自由職業者", 
       "location": "台北, 台灣", 
       "date": "2018-2022", 
-      "detail": "作為一個自由職業者跟我們的外包團隊,我的任務是維護管理者網站使網站更人性化, 資料庫處理速度更快, 以及 Android 手機軟體開發."
+      "detail": "作為我們團隊中的一員，維護網站和優化資料庫是我的主要任務。偶而也要進行行動應用程式的開發，例如 Android 或 iOS."
     },
     { 
-      "position": "初級網頁開發工程師", 
+      "position": "全端開發工程師", 
       "company": "大禾資訊有限公司", 
       "location": "桃園, 台灣", 
       "date": "2013-2014", 
       "detail": "大禾資訊是一間開發商業軟體公司, 像是企業ERP系統, POS系統, 財務會計系統等等. 我主要負責是幫忙公司把現有的系統網站優化的更人性化與提高資料庫處理速度."
     },
     { 
-      "position": "實習 Android 開發工程師", 
+      "position": "實習軟體開發工程師", 
       "company": "康曜資訊有限公司", 
       "location": "台北, 台灣",
       "date": "2011-2012", 
@@ -98,7 +98,7 @@
     {
       "name": "個人網站",
       "status": "2023",
-      "description": "這是一個簡易的個人網站, 沒有任何後端支援.",
+      "description": "這是一個簡易的個人網站, 目前沒有任何後端支援.",
       "image": "/assets/portfolio-personal-website.png",
       "technologies": [
         { "name": "Next.js" },
@@ -111,13 +111,14 @@
     {
       "name": "Chatwis.ai",
       "status": "2023",
-      "description": "Chatwis 基於 ChatGPT API 技術開發的 iOS 手機應用程式，並使用 MVVM、核心數據來實現。",
+      "description": "它是一款基於 ChatGPT API 技術構建的 iOS 行動應用程式。 主要使用 Swift 進行開發與 Storyboard UI 設計，並利用 RxSwift 和 MVVM 的結構來實現，也使用 Core Data 儲存資料。",
       "image": "/assets/portfolio-chatwis.png",
       "technologies": [
         { "name": "iOS" },
         { "name": "Swift" },
         { "name": "RxSwift" },
-        { "name": "MVVM" }
+        { "name": "MVVM" },
+        { "name": "Core Data" }
       ]
     }
   ]
