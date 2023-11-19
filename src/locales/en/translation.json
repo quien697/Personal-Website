@@ -68,30 +68,30 @@
       "name": "Coding is a passion for me, not just a job. Although the journey has not been easy, I am proud to have overcome every challenge that came my way. My passion for coding has never wavered, and I remain committed to pursuing new challenges to further enhance my skills and knowledge."
     },
     { 
-      "name": "I have wide range of hobbies and passions. From reading, playing sports, running, traveling. I am always seeking new experiences and love to keep myself engaged and learning new things."
+      "name": "I have wide range of hobbies and passions. From reading, playing sports, running and traveling. I am always seeking new experiences and love to keep myself engaged and learning new things."
     }
   ],
   "experiences": [
     { 
-      "position": "Full Stack Developer", 
+      "position": "Software Developer", 
       "company": "Freelance", 
       "location": "Taipei, Taiwan", 
       "date": "2018-2022", 
-      "detail": "As a freelance with our team, I mainly maintain admin website to optimized database search functions, optimized website more user-friendly and develope android mobile app."
+      "detail": "As a freelance in our team, maintained websites and optimized databases is my mainly task. Also sometime worked on mobile development such as Android or iOS."
     },
     { 
-      "position": "Junior Web Developer", 
+      "position": "Full Stack Developer", 
       "company": "Daher Infomation Co., Ltd",  
       "location": "Taoyuan, Taiwan",  
       "date": "2013-2014", 
       "detail": "Daher is a commercial software development company, like enterprise erp systems, POS system, financial accounting system, etc.\n I mainly help the company to optimize website more user-friendly and evelope a better performance database that increased query speed."
     },
     { 
-      "position": "Android Developer Intern", 
+      "position": "Intern Software Developer", 
       "company": "Sunlight Infomation Co., Ltd", 
       "location": "Taipei, Taiwan",
       "date": "2011-2012", 
-      "detail": "Sunlight is a sofeware company. I mainly help company to develop android moblie app with a team and maintain the exiting website."
+      "detail": "Sunlight is a software company. I mainly help company to develop Android mobile app with a team and maintain the existing website."
     }
   ],
   "portfolios": [
@@ -111,13 +111,14 @@
     {
       "name": "Chatwis.ai",
       "status": "2023",
-      "description": "Chatwis is built on ChatGPT API technologies and implement it with MVVM, core data.",
+      "description": "It is a iOS mobile app that built on ChatGPT API technologies. We mainly use Swift for development and Storyboard for UI design. We implement using RxSwift and the MVVM structure, and we also utilize Core Data to store data locally.",
       "image": "/assets/portfolio-chatwis.png",
       "technologies": [
         { "name": "iOS" },
         { "name": "Swift" },
         { "name": "RxSwift" },
-        { "name": "MVVM" }
+        { "name": "MVVM" },
+        { "name": "Core Data" }
       ]
     }
   ]
