@@ -55,20 +55,20 @@ export const useLocalizedData = () => {
     icon: ReactElement;
   }
   const socials: Array<SocialsProps> = [
-    { 
-      name: "Linkedin", 
-      href: "https://www.linkedin.com/in/quien697/", 
+    {
+      name: "Linkedin",
+      href: "https://www.linkedin.com/in/quien697/",
       icon: <FaLinkedin size={iconSize} className="hover:text-blue-600" />,
     },
-    { 
-      name: "Github", 
-      href: "https://github.com/quien697/", 
-      icon: <FaGithub size={iconSize} className="hover:text-blue-600" />, 
+    {
+      name: "Github",
+      href: "https://github.com/quien697/",
+      icon: <FaGithub size={iconSize} className="hover:text-blue-600" />,
     },
-    { 
-      name: "Instagram", 
-      href: "https://www.instagram.com/quien697/", 
-      icon: <FaInstagram size={iconSize} className="hover:text-blue-600" />, 
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/quien697/",
+      icon: <FaInstagram size={iconSize} className="hover:text-blue-600" />,
     },
   ]
   // Theme
@@ -79,7 +79,7 @@ export const useLocalizedData = () => {
       name: "English",
       value: "en",
     },
-    { 
+    {
       name: "繁體中文",
       value: "zh_tw",
     },
@@ -93,6 +93,7 @@ export const useLocalizedData = () => {
     { name: "JavaScript" },
     { name: "TypeScript" },
     { name: "React.js" },
+    { name: "React Native" },
     { name: "Next.js" },
     { name: "Node.js" },
     { name: "Tailwind CSS" },
@@ -114,6 +115,7 @@ export const useLocalizedData = () => {
     company: string;
     location: string;
     date: string;
+    isCurrentlyWorkHere: boolean;
     detail: string;
   }
   const experiences: Array<ExperiencesProps> = t('experiences', { returnObjects: true });
