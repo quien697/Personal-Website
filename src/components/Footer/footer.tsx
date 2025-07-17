@@ -27,7 +27,7 @@ const Header = () => {
             )
           })}
         </ul>
-        <h2 className="pt-8">Copyright © 2023 <span className="font-bold text-blue-600">Tsung-Hsun Liu</span> All Rights Reserved.</h2>
+        <h2 className="pt-8">Copyright © 2025 <span className="font-bold text-blue-600">Tsung-Hsun Liu</span> All Rights Reserved.</h2>
       </div>
     </footer>
   )
