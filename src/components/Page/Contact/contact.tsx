@@ -6,7 +6,7 @@ import Heading from '@/components/Common/SectionHeading';
 import { useLocalizedData } from '@/data';
 
 export default function ContactSection() {
-  const { constants, contact } = useLocalizedData()
+  const { constants } = useLocalizedData()
   const form = useRef<HTMLFormElement>(null);
   const currentForm = form.current || "";
 

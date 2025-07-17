@@ -88,26 +88,20 @@ export const useLocalizedData = () => {
   const aboutMeContents: Array<NameProps> = t('aboutMeContents', { returnObjects: true });
   // Skill
   const skills: Array<NameProps> = [
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "JavaScript" },
-    { name: "TypeScript" },
-    { name: "React.js" },
-    { name: "React Native" },
-    { name: "Next.js" },
-    { name: "Node.js" },
-    { name: "Tailwind CSS" },
-    { name: "Bootstrap CSS" },
-    { name: "C#" },
-    { name: "PHP" },
     { name: "iOS" },
     { name: "Swift" },
     { name: "Android" },
-    { name: "Java" },
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "JavaScript" },
+    { name: "React.js" },
+    { name: "React Native" },
+    { name: "Node.js" },
+    { name: "C#" },
+    { name: "PHP" },
     { name: "MYSQL" },
     { name: "Git" },
     { name: "GitHub" },
-    { name: "AWS" },
   ]
   // Experience
   interface ExperiencesProps {
@@ -137,7 +131,7 @@ export const useLocalizedData = () => {
   }
   const contact: Array<ContactProps> = [
     {
-      name: "V6P 2G8 Vancouver, Canada",
+      name: "Taipei, Taiwan",
       icon: <HiMapPin size={iconSize} className="text-blue-600" />,
     },
     {
@@ -145,7 +139,7 @@ export const useLocalizedData = () => {
       icon: <HiEnvelope size={iconSize} className="text-blue-600" />,
     },
     {
-      name: "(337) 318-5945",
+      name: "0988-215-184",
       icon: <AiFillPhone size={iconSize} className="text-blue-600" />,
     },
   ]

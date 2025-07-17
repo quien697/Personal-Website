@@ -7,7 +7,7 @@
     "IOS_DEVELOPER": "iOS Developer",
     "I_AM": "I am ",
     "CALL_ME": "You can also call me ",
-    "BASE_ON": " based in Vancouver, BC, Canada.",
+    "BASE_ON": " in Taiwan.",
     "ABOUT_ME": "About Me",
     "KNOW_ME": "Get To Know Me!",
     "MY_SKILLS": "My Skills",
@@ -62,21 +62,24 @@
   ],
   "aboutMeContents": [
     {
-      "name": "Hi, My name is Tsung-Hsun, or call me Quien. I have a 1+ years of experience in Android app development using Java and 4+ years of experience in Web development, and learned iOS development with Swift for 1 year."
+      "name": "Hi, I'm Quien, a software developer passionate about building thoughtful, efficient, and user-centered applications."
     },
     {
-      "name": "Coding is a passion for me, not just a job. Although the journey has not been easy, I am proud to have overcome every challenge that came my way. My passion for coding has never wavered, and I remain committed to pursuing new challenges to further enhance my skills and knowledge."
+      "name": "I hold a degree in Computer Science and began my career in web development. After a brief break from the tech industry to assist with my dad's waterproofing business, I continued to freelance in software development, working on both web and mobile projects with friends and clients."
     },
     {
-      "name": "I have wide range of hobbies and passions. From reading, playing sports, running and traveling. I am always seeking new experiences and love to keep myself engaged and learning new things."
+      "name": "Four years ago, I moved to Vancouver, Canada, where I completed a diploma in Web and Mobile App Development. I later joined Old Moon Digital as a software developer, focusing on CMS development, primarily using Drupal and WordPress for international clients."
+    },
+    {
+      "name": "Now that I've returned to Taiwan, I'm shifting my focus toward iOS development, building personal projects with Swift and SwiftUI, and looking forward to contributing to real-world mobile applications."
     }
   ],
   "experiences": [
     {
-      "position": "Web Developer",
+      "position": "Software Developer",
       "company": "Old Moon Digital",
       "location": "Burnaby, BC, Canada",
-      "date": "2024-present",
+      "date": "2024-2025",
       "isCurrentlyWorkHere": true,
       "detail": "Specialized in web development at Old Moon Digital, an agency focused on delivering practical solutions through Drupal for businesses, governments, and non-profit organizations, aiming to create outstanding digital experiences for their audiences."
     },
