@@ -41,13 +41,13 @@ export const useLocalizedData = () => {
     SEND_MESSAGE: string;
     FOLLOW_ME: string;
   }
-  const constants: ConstantsProps = t('constants', { returnObjects: true });
+  const constants: ConstantsProps = t('constants', { returnObjects: true }) as ConstantsProps;
   // Navigation
   interface NavItemsProps {
     name: string;
     href: string;
   }
-  const navItems: Array<NavItemsProps> = t('navItems', { returnObjects: true });
+  const navItems: Array<NavItemsProps> = t('navItems', { returnObjects: true }) as NavItemsProps[];
   // Social
   interface SocialsProps {
     name: string;
@@ -72,7 +72,7 @@ export const useLocalizedData = () => {
     },
   ]
   // Theme
-  const themes: Array<ValueProps> = t('themes', { returnObjects: true });
+  const themes: Array<ValueProps> = t('themes', { returnObjects: true }) as ValueProps[];
   // Language
   const languages: Array<ValueProps> = [
     {
@@ -85,7 +85,7 @@ export const useLocalizedData = () => {
     },
   ]
   // About Me
-  const aboutMeContents: Array<NameProps> = t('aboutMeContents', { returnObjects: true });
+  const aboutMeContents: Array<NameProps> = t('aboutMeContents', { returnObjects: true }) as NameProps[];
   // Skill
   const skills: Array<NameProps> = [
     { name: "iOS" },
@@ -112,7 +112,7 @@ export const useLocalizedData = () => {
     isCurrentlyWorkHere: boolean;
     detail: string;
   }
-  const experiences: Array<ExperiencesProps> = t('experiences', { returnObjects: true });
+  const experiences: Array<ExperiencesProps> = t('experiences', { returnObjects: true }) as ExperiencesProps[];
   // Portfolio
   interface PortfolioProps {
     name: string;
@@ -123,7 +123,7 @@ export const useLocalizedData = () => {
     github?: string;
     link?: string;
   }
-  const portfolios: Array<PortfolioProps> = t('portfolios', { returnObjects: true });
+  const portfolios: Array<PortfolioProps> = t('portfolios', { returnObjects: true }) as PortfolioProps[];
   // Contact Me
   interface ContactProps {
     name: string;
